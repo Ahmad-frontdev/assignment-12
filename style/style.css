@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: CENTER;
+    padding-top: 200px;
+}
+.container{
+    width: 900px;
+    background-color: #EEE;
+    display: flex;
+    justify-content:space-evenly;
+    height: 450px;
+}
+.container .plan{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: white;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.personal , .enterprise , .business{
+font-size: x-large;
+font-weight: 600;
+}
+.sec{
+        position: relative;
+}
+.price span{
+    color: #197beb;
+    font-size: xx-large;
+    font-weight: 800;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+    font-size: small;
+}
+p{
+color: #978a8c;
+}
+p span{
+    color: #898890;
+    font-weight: 550;
+}
+button{
+    background-color: #197beb;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    width: 90px;
+    height: 35px;
+    font-size: x-small;
+    font-weight: 500;
+
+}
+.sec::before{
+    content: "Most Popular";
+    background-color: #197beb;
+    position: absolute;
+    color: white;
+    width: 80% ;
+    height: 34px;
+    font-size: smaller;
+    font-weight: 500;
+    top: -17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    position: relative;
+}
+.first::before{
+    content: "";
+    background-color: transparent;
+    width: 0;
+    position: absolute;
+    height: 0;
+    border: solid;
+    border-top: 17px solid transparent;
+        border-right: 15px solid #0b56ac;
+        border-bottom: 0 solid transparent;
+        border-left: 0;
+        top: -17px;
+        right: -45px;
+}
+.third {
+    position: relative;
+}
+
+.third::before {
+    content: "";
+    background-color: transparent;
+    width: 0;
+    position: absolute;
+    height: 0;
+    border: solid;
+    border-top: 17px solid transparent;
+    border-left: 15px solid #0b56ac;
+    border-bottom: 0 solid transparent;
+    border-right: 0;
+    top: -17px;
+    left: -45px;
+}
